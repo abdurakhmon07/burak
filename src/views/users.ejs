@@ -1,5 +1,13 @@
-<%- include('includes/header')%>
+<%- include('includes/header') %>
+
 <body>
-    <div>Users page</div>
+  <div>
+    <div>USERS PAGE</div>
+
+    <% users.map((value, key) => { %>
+    <p><%= value.memberNick %> - <%= value.memberPhone %> - <%= value.memberStatus %></p>
+    <% } ) %>
+  </div>
 </body>
-<%- include('includes/footer')%>
+
+<%- include('includes/footer') %>
